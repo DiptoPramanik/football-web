@@ -7,6 +7,11 @@ section{
 p{
     color: dimgrey;
 }
+
+
+/* -----------------conmebol------------ area------------ */
+
+
 .conmebol-area{
     display: flex;
     background-color:#2D25A0;
@@ -21,6 +26,7 @@ p{
     color: white;
     margin-top: 90px;  
 }
+
 .conmebol-fonts{
     font-family: 'Poppins', sans-serif;
 }
@@ -43,6 +49,11 @@ h3{
     margin-top: 120px;
     transition: transform 2s ease-in-out ;
 }
+
+
+/*----------------- Players------------------section----------------- */
+
+
 .players-area{
      display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -69,6 +80,11 @@ h3{
 .player-name,.player-info{
     margin-top: 10px;
 }
+
+
+/*----------------------- Match Highlights Area---------------------- */
+
+
 .flexible{
     display: flex;
     justify-content: space-evenly;
@@ -88,6 +104,11 @@ h4{
     margin-top: 40px;
     border-radius: 10px;
 }
+
+
+/*----------------Conmebol Associations area -------------------*/
+
+
 .conmebol-teams img{
     width:567px;
     height:427px;
@@ -97,6 +118,11 @@ h4{
 h5{
     font-size: 35px;
 }
+
+
+/*--------------- Footer section ------------------------*/
+
+
 .footer-part{
     text-align: center;
 }
@@ -107,6 +133,11 @@ h5{
     width: 260px;
     height: 110px;
 }
+
+
+/* -----------------font awesome style------------------------  */
+
+
 .fab{
     color:#969BAB ;
     transition: transform 1.5s ease-in-out;
@@ -121,4 +152,108 @@ h5{
     font-size: 14px;
     color: wheat;
     margin-bottom: 50px;
+}
+
+
+ /*----------------Mobile 
+
+ devices --------------- */
+
+
+@media only screen and (max-width:688px) {
+    .conmebol-area{
+        flex-wrap: wrap;
+       justify-content: center;
+       width: 100%;
+       height: 700px;
+    }
+    .tournament-title{
+        font-size: 35px;
+        color: white;
+        margin-top: 0px;  
+    }
+    .tournament-banner img{
+        width: 329px;
+        height: 280px;
+        margin-top: 60px;
+    }
+    .players-area{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .flexible{
+       flex-wrap: wrap;
+      
+    }
+    h4{
+        font-size: 25px;
+    }
+    .highlights-details,.conmebol-details{
+        width:80%;
+        height:190px;
+    }
+
+    .match-time img{
+        width: 328px;
+        height: 248px;
+        margin-top: 270px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    .conmebol-teams img{
+        width: 328px;
+        height: 248px;
+    }
+    footer{
+        margin-top:200px;
+    }
+    
+}
+
+
+/* ------------Tablet -------- 
+------Devices ---------*/
+
+
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .conmebol-area{
+        flex-wrap: wrap;
+       justify-content: space-around;
+       width: 100%;
+       height: 100%;
+    }
+    .tournament-title{
+        font-size: 35px;
+        color: white;
+        margin-top: 0px;  
+    }
+    .tournament-banner img{
+        width: 329px;
+        height: 280px;
+        margin-top: 60px;
+    }
+    .players-area{
+        grid-template-columns: repeat(2,1fr);
+    }
+    h4{
+        font-size: 25px;
+    }
+   
+    .highlights-details,.conmebol-details{
+        width:200px;
+    }
+    .match-time img{
+        width: 400px;
+        height: 350px;
+        margin-top: 80px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    .conmebol-teams img{
+        width: 400px;
+        height: 350px;
+        margin-top: 100px;
+    }
 }
